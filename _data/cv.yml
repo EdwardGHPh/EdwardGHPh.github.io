@@ -14,40 +14,18 @@
     - title: B.Sc. Physics
       institution: Univeristy of Quindío, Quindío, Colombia
       year: 2023
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
 
 - title: Experience
   type: time_table
   contents:
     - title: Student assistant - Introductory mechanics
       institution: Physics program, University of Quindío
-      year: Feb 2020 - Jun 2020
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+      year: Feb 2020 - Jun 2020 (1 semester)
     - title: Research assistant
       institution: Group of theoretical and computational physics, University of Quindío
       year: Jul 2022 - To date
       description:
-        - Description 1.
-        - Description 2.
-
-- title: Personal Projects
-  type: time_table
-  contents:
-    - title: empty
-      year: empty
-      description: empty
+        - Effects of parity-deformed algebras on canonical quantum optics systems.
 
 - title: Honors and Awards
   type: time_table
@@ -60,13 +38,9 @@
   type: nested_list
   contents:
     - title: Open quantum systems.
-      items: 
-        - Description 1.
-        - Description 2.
     - title: Machine learning for many-body physics
       items:
-        - Description 1.
-        - Description 2.
+        - (Classical Shadows) $\cap$ (Neural-Networks)
 
 - title: Other Interests
   type: list

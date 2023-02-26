@@ -8,18 +8,15 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address:
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+BSc Physics student at the University of Quindío in Colombia and member of the university's only group of theoretical and computational physics.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests include open quantum systems and machine learning for many-body quantum mechanics. I currently work under the supervision of Dr. Edgar A. Gómez, at the University of Quindío, and Dr. Stefanie Czischek, at the University of Ottawa. Briefly, I am interested in understanding how to use machine learning methods to improve density matrix reconstructions and predict the dynamical behavior of quantum many-body systems. More concretely, my work centers around studying the accuracy performance of different neural-network architectures, trained through classical shadows, to predict long-time dynamics. I also have an interest in the use of data science and statistics to study any sort of problem.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Besides research, I enjoy reading, learning about languages, spotting birds while walking, among other things.
