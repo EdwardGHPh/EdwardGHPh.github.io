@@ -38,9 +38,9 @@
   type: nested_list
   contents:
     - title: Open quantum systems.
-    - title: Machine learning for many-body physics
+    - title: Machine learning for many-body physics.
       items:
-        - (Classical Shadows) $$\cap$$ (Neural-Networks)
+        - (Classical Shadows) $$\cap$$ (Neural-Networks).
 
 - title: Other Interests
   type: list
