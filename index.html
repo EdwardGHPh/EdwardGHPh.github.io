@@ -3,29 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edward's Personal Webpage</title>
+    <title>EdGH's Portfolio</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+
+    <!-- Include MathJax Library -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#courses">Courses Taken</a></li>
-            <li><a href="#extras">Extras</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="courses.html">Courses Taken</a></li>
+            <li><a href="extras.html">Extras</a></li>
         </ul>
     </nav>
 
     <!-- Horizontal Bar -->
     <hr class="horizontal-bar">
 
-    <!-- Main Content -->
-    <main>
-        <h1>Welcome to My Personal Webpage!</h1>
-        <p>Feel free to explore my CV, blog, teaching materials, courses I've taken, and other extras.</p>
-    </main>
+    <!-- Bio Section -->
+    <section class="bio-section">
+        <div class="bio-text">
+            <p>
+                <!-- Your first paragraph of bio -->
+                Hello! I'm Edward, an MSc Physics student at the University of Ottawa, working under the supervision of Professor Stefanie Czischek in Canada. I am originally from Colombia, where I completed my undergraduate studies at Universidad del Quindío and collaborated with Professor Édgar Arturo Gómez González in the Theoretical & Computational Physics Group (GFTC). My primary research interests include quantum mechanics, particularly quantum computing and information, semi-classical physics, and many-body condensed matter systems.
+            </p>
+            <p>
+                <!-- Your second paragraph of bio -->
+                When I'm not immersed in physics, I enjoy learning new languages, café hopping, bar hopping, and swimming! Welcome to my personal page—here, you'll find everything from my resume (for professional and academic purposes) to photos of birds and more.
+            </p>
+            <p>
+                <b>Here's an equation I find fascinating</b>
+            </p>  
+            <div class="equation-box">
+                $$\frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} = 0$$
+            </div>
+        </div>
+
+        <div class="bio-image">
+            <!-- Carousel Container -->
+            <div class="carousel">
+                <!-- Slide Images -->
+                <div class="slide active">
+                    <img src="hmpic1.jpg" alt="Edward's Photo">
+                </div>
+                <div class="slide">
+                    <img src="hmpic2.jpg" alt="Additional Photo 1">
+                </div>
+                 <div class="slide">
+                    <img src="hmpic3.jpg" alt="Additional Photo 2">
+                </div>
+        
+                 <!-- Navigation Arrows -->
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/edwardghph" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/egh3456phy" target="_blank">LinkedIn</a> |
+                <a href="mailto:edward.ghphy@gmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Second Horizontal Bar Positioned Above Footer -->
+    <hr class="horizontal-bar">
+
+ <!-- Footer Section -->
+    <footer class="footer-section">
+        <p id="current-date">Loading date...</p>
+    </footer>
+
+    <script src="date.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
+
