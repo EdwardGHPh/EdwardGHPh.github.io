@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGH's Portfolio</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+
+    <!-- Favicon -->
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+
+    <!-- FontAwesomeIcons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+
+    <!-- Include MathJax Library -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="teaching.html">Teaching & Tutorials</a></li>
+            <li><a href="courses.html">Courses Taken</a></li>
+            <li><a href="extras.html">Extras</a></li>
+        </ul>
+    </nav>
+
+    <!-- Horizontal Bar -->
+    <hr class="horizontal-bar">
+
+    <!-- Second Horizontal Bar Positioned Above Footer -->
+    <hr class="horizontal-bar">
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <p id="current-date">Loading date...</p>
+    </footer>
+
+    <script src="date.js"></script>
+</body>

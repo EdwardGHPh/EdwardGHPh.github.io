@@ -58,9 +58,6 @@
 .bio-image img {
     max-width: 500px; /* Adjust as needed */
     height: auto;
-    border: 5px solid #333; /* Solid border as frame */
-    border-radius: 10px; /* Rounded corners for the frame */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 .social-links {
     margin-top: 10px; /* Space above social links */

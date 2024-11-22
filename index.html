@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdGH's Portfolio</title>
+    <title>EGH's Portfolio</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
     <script>
@@ -19,6 +19,12 @@
         };
     </script>
 
+    <!-- Favicon -->
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+
+    <!-- FontAwesomeIcons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+
     <!-- Include MathJax Library -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
@@ -26,9 +32,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="teaching.html">Teaching & Tutorials</a></li>
             <li><a href="courses.html">Courses Taken</a></li>
             <li><a href="extras.html">Extras</a></li>
         </ul>
@@ -42,17 +49,17 @@
         <div class="bio-text">
             <p>
                 <!-- Your first paragraph of bio -->
-                Hello! I'm Edward, an MSc Physics student at the University of Ottawa, working under the supervision of Professor Stefanie Czischek in Canada. I am originally from Colombia, where I completed my undergraduate studies at Universidad del Quindío and collaborated with Professor Édgar Arturo Gómez González in the Theoretical & Computational Physics Group (GFTC). My primary research interests include quantum mechanics, particularly quantum computing and information, semi-classical physics, and many-body condensed matter systems.
+                Hello! I'm Edward, an MSc Physics student at the <a href="https://www.uottawa.ca/en" target = "_blank">University of Ottawa</a>, working under the supervision of <a href ="https://czischek-group.uottawa.ca/" target = "_blank">Professor Stefanie Czischek</a> in Canada. I am originally from Colombia, where I completed my undergraduate studies at <a href="https://www.uniquindio.edu.co/" target="_blank">Universidad del Quindío</a> and collaborated with Professor <a href ="https://orcid.org/0000-0002-3456-3819" target = "_blank">Édgar Arturo Gómez González</a> in the Theoretical & Computational Physics Group (GFTC). My primary research interests include quantum mechanics, particularly quantum computing and information, semi-classical physics, and many-body condensed matter systems.
             </p>
             <p>
                 <!-- Your second paragraph of bio -->
                 When I'm not immersed in physics, I enjoy learning new languages, café hopping, bar hopping, and swimming! Welcome to my personal page—here, you'll find everything from my resume (for professional and academic purposes) to photos of birds and more.
             </p>
-            <p>
+            <p style="text-align: center;">
                 <b>Here's an equation I find fascinating</b>
             </p>  
-            <div class="equation-box">
-                $$\frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} = 0$$
+            <div style="text-align: center;">
+                <div class="equation-box">$$\frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} = 0$$</div>
             </div>
         </div>
 
@@ -61,23 +68,25 @@
             <div class="carousel">
                 <!-- Slide Images -->
                 <div class="slide active">
-                    <img src="hmpic1.jpg" alt="Edward's Photo">
+                    <img src="hmpic1.jpg" alt="Parrot aviary in Calarca, Quindío (October-2023)">
                 </div>
                 <div class="slide">
-                    <img src="hmpic2.jpg" alt="Additional Photo 1">
+                    <img src="hmpic2.jpg" alt="100m Waterfall in San José de Suaita, Santander (January-2024)">
                 </div>
                  <div class="slide">
-                    <img src="hmpic3.jpg" alt="Additional Photo 2">
+                    <img src="hmpic3.jpg" alt="APRIQuOt group picture in Ottawa, Ontario (August-2023)">
                 </div>
         
                  <!-- Navigation Arrows -->
                 <a class="prev">&#10094;</a>
                 <a class="next">&#10095;</a>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/edwardghph" target="_blank">GitHub</a> |
-                <a href="https://linkedin.com/in/egh3456phy" target="_blank">LinkedIn</a> |
-                <a href="mailto:edward.ghphy@gmail.com">Email</a>
+            <div style="text-align: center;">
+                <div class="social-links">
+                    <a href="https://github.com/edwardghph" target="_blank">GitHub <i class='fa fa-github'></i> </a>  |
+                    <a href="https://linkedin.com/in/egh3456phy" target="_blank">LinkedIn <i class='fa fa-linkedin-square'></i></a> |
+                    <a href="mailto:edward.ghphy@gmail.com">e-mail <i class='fa fa-envelope'></i></a> 
+                </div>
             </div>
         </div>
     </section>
