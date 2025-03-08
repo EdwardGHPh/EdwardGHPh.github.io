@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- METADATA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGH's Portfolio</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    
+    <!-- FAVICON -->
+    <link type="image/png" sizes="16x16" rel="icon" href="assets/images/favicon.png">
+
+    <!-- MATHJAX CONFIGURATION -->
     <script>
         window.MathJax = {
             tex: {
@@ -18,18 +26,13 @@
             }
         };
     </script>
-
-    <!-- Favicon -->
-    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
-
-    <!-- FontAwesomeIcons -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
-
-    <!-- Include MathJax Library -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
+
 <body>
-    <!-- Navigation Bar -->
+    <!-- ==================== -->
+    <!-- NAVIGATION SECTION -->
+    <!-- ==================== -->
     <nav class="navbar">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
@@ -41,66 +44,166 @@
         </ul>
     </nav>
 
-    <!-- Horizontal Bar -->
+    <!-- HORIZONTAL SEPARATOR -->
     <hr class="horizontal-bar">
 
-    <!-- Bio Section -->
+    <!-- ==================== -->
+    <!-- BIO SECTION -->
+    <!-- ==================== -->
     <section class="bio-section">
+        <!-- BIO TEXT CONTENT -->
         <div class="bio-text">
             <p>
-                <!-- Your first paragraph of bio -->
-                Hello! I'm Edward, an MSc Physics student at the <a href="https://www.uottawa.ca/en" target = "_blank">University of Ottawa</a>, working under the supervision of <a href ="https://czischek-group.uottawa.ca/" target = "_blank">Professor Stefanie Czischek</a> in Canada. I am originally from Colombia, where I completed my undergraduate studies at <a href="https://www.uniquindio.edu.co/" target="_blank">Universidad del Quindío</a> and collaborated with Professor <a href ="https://orcid.org/0000-0002-3456-3819" target = "_blank">Édgar Arturo Gómez González</a> in the Theoretical & Computational Physics Group (GFTC). My primary research interests include quantum mechanics, particularly quantum computing and information, semi-classical physics, and many-body condensed matter systems.
+                Hello! I'm Edward, an MSc Physics student at the 
+                <a href="https://www.uottawa.ca/en" target="_blank">University of Ottawa</a>, 
+                working under the supervision of 
+                <a href="https://czischek-group.uottawa.ca/" target="_blank">Professor Stefanie Czischek</a> 
+                in Canada. I am originally from Colombia, where I completed my undergraduate studies at 
+                <a href="https://www.uniquindio.edu.co/" target="_blank">Universidad del Quindío</a> 
+                and collaborated with Professor 
+                <a href="https://orcid.org/0000-0002-3456-3819" target="_blank">Édgar Arturo Gómez González</a> 
+                in the Theoretical & Computational Physics Group (GFTC). My primary research interests include 
+                quantum mechanics, particularly quantum computing and information, semi-classical physics, 
+                and many-body condensed matter systems.
             </p>
+            
             <p>
-                <!-- Your second paragraph of bio -->
-                When I'm not immersed in physics, I enjoy learning new languages, café hopping, bar hopping, and swimming! Welcome to my personal page—here, you'll find everything from my resume (for professional and academic purposes) to photos of birds and more.
+                When I'm not immersed in physics, I enjoy learning new languages, café hopping, 
+                bar hopping, and swimming! Welcome to my personal page—here, you'll find everything 
+                from my resume (for professional and academic purposes) to photos of birds and more.
             </p>
-            <p style="text-align: center;">
-                <b>Here's an equation I find fascinating</b>
-            </p>  
-            <div style="text-align: center;">
-                <div class="equation-box">$$\frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} = 0$$</div>
+
+            <!-- CENTERED EQUATION DISPLAY -->
+            <div class="equation-container">
+                <p class="equation-label"><b>Here's an equation I find fascinating</b></p>
+                <div class="equation-box">
+                    $$\frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} = 0$$
+                </div>
             </div>
         </div>
 
+        <!-- BIO IMAGE AND SOCIAL LINKS -->
         <div class="bio-image">
-            <!-- Carousel Container -->
+            <!-- IMAGE CAROUSEL -->
             <div class="carousel">
-                <!-- Slide Images -->
+                <!-- CAROUSEL SLIDES -->
                 <div class="slide active">
-                    <img src="hmpic1.jpg" alt="Parrot aviary in Calarca, Quindío (October-2023)">
+                    <img src="assets/images/hmpic1.jpg" alt="Parrot aviary in Calarca, Quindío (October-2023)">
                 </div>
                 <div class="slide">
-                    <img src="hmpic2.jpg" alt="100m Waterfall in San José de Suaita, Santander (January-2024)">
+                    <img src="assets/images/hmpic2.jpg" alt="100m Waterfall in San José de Suaita, Santander (January-2024)">
                 </div>
-                 <div class="slide">
-                    <img src="hmpic3.jpg" alt="APRIQuOt group picture in Ottawa, Ontario (August-2023)">
+                <div class="slide">
+                    <img src="assets/images/hmpic3.jpg" alt="APRIQuOt group picture in Ottawa, Ontario (August-2023)">
                 </div>
-        
-                 <!-- Navigation Arrows -->
+
+                <!-- CAROUSEL CONTROLS -->
                 <a class="prev">&#10094;</a>
                 <a class="next">&#10095;</a>
             </div>
-            <div style="text-align: center;">
-                <div class="social-links">
-                    <a href="https://github.com/edwardghph" target="_blank">GitHub <i class='fa fa-github'></i> </a>  |
-                    <a href="https://linkedin.com/in/egh3456phy" target="_blank">LinkedIn <i class='fa fa-linkedin-square'></i></a> |
-                    <a href="mailto:edward.ghphy@gmail.com">e-mail <i class='fa fa-envelope'></i></a> 
-                </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div class="social-links">
+                <a href="https://github.com/edwardghph" target="_blank">
+                    GitHub <i class='fa fa-github'></i>
+                </a>  |
+                <a href="https://linkedin.com/in/egh3456phy" target="_blank">
+                    LinkedIn <i class='fa fa-linkedin-square'></i>
+                </a> |
+                <a href="mailto:edward.ghphy@gmail.com">
+                    e-mail <i class='fa fa-envelope'></i>
+                </a> 
             </div>
         </div>
     </section>
 
- <!-- Second Horizontal Bar Positioned Above Footer -->
+    <!-- ==================== -->
+    <!-- RESEARCH HIGHLIGHTS -->
+    <!-- ==================== -->
+    <section class="research-section">
+        <h2 class="section-title">Research Highlights</h2>
+        
+        <div class="research-grid">
+            <!-- QUANTUM PHYSICS CARD -->
+            <article class="research-card" data-field="quantum">
+                <div class="card-header">
+                    <h3>Quantum to Classical Transition using RBMs</h3>
+                    <div class="equation-preview">
+                        $W(x, p)$
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p>...</p>
+                    <div class="research-links">
+                        <a href="/papers/qct.pdf" class="link-preprint">
+                            <i class="fa fa-file-pdf-o"></i> Preprint
+                        </a>
+                        <a href="https://github.com/yourrepo/qct" class="link-code">
+                            <i class="fa fa-code"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CONDENSED MATTER CARD -->
+            <article class="research-card" data-field="condensed">
+                <div class="card-header">
+                    <h3>Crystal Structure Prediction with Rydberg Atom QPUs</h3>
+                    <div class="equation-preview">
+                        $\mathcal{H}(t)$
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p>...</p>
+                    <div class="research-links">
+                        <a href="/papers/csp.pdf" class="link-preprint">
+                            <i class="fa fa-file-pdf-o"></i> Preprint
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- TECHNICAL SKILLS -->
+    <!-- ==================== -->
+    <section class="skills-section">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skills-container">
+            <!-- NUMERICAL METHODS -->
+            <div class="skill-category">
+                <h3>Numerical Methods</h3>
+                <ul class="skill-list">
+                    <li>Finite Difference Methods</li>
+                </ul>
+            </div>
+
+            <div class = "skill-category">
+                <h3>Deep Learning Methods</h3>
+                <ul class = "skill-list">
+                    <li>Recurrent Neural Networks</li>
+                    <li>Restricted Boltzmann Machines</li>
+                    <li>Variational Autoencoders</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HORIZONTAL SEPARATOR -->
     <hr class="horizontal-bar">
 
- <!-- Footer Section -->
+    <!-- ==================== -->
+    <!-- FOOTER -->
+    <!-- ==================== -->
     <footer class="footer-section">
         <p id="current-date">Loading date...</p>
     </footer>
 
-    <script src="date.js"></script>
-    <script src="carousel.js"></script>
+    <!-- SCRIPTS -->
+    <script src="assets/js/date.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 </html>
-
