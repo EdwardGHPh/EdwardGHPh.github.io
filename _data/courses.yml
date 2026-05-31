@@ -1,8 +1,8 @@
 # Courses — one entry per course. `reflection` is optional.
 # Add as many as you like; they render top to bottom on /courses/.
 
-- name: "Quantum Field Theory"
+- name: "PHY5110 Solid State Physics I"
   institution: "University of Ottawa"
-  year: 2024
-  description: "Canonical quantization, path integrals, and perturbation theory."
-  reflection: "Sample entry — replace with your own courses and reflections."
+  year: 2025
+  description: "Crystal structures, band structure, tight-binding model, LCAO, graphene"
+  #reflection: "Sample entry — replace with your own courses and reflections."
