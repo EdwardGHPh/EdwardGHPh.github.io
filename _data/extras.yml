@@ -2,16 +2,16 @@
 # Any field left blank is hidden on the page automatically.
 
 game:
-  title: "Your current game"
-  platform: ""              # e.g. "PC", "Switch", "PS5"
-  note: ""                  # optional one-liner
+  title: "Hollow Knight: Silksong"
+  platform: "PC"              # e.g. "PC", "Switch", "PS5"
+  note: "Stuck at Skarr Singer Karmelita's den"                  # optional one-liner
 
 reading:                    # books you're reading right now (add as many as you like)
-  - title: "Book Title"
-    author: "Author Name"
-    note: ""                # optional, e.g. "about halfway"
+  - title: "L'étranger"
+    author: "Albert Camus"
+    note: "Excuse to learn some french vocab"                # optional, e.g. "about halfway"
 
 hyperfixation:
-  topic: "Your current hyperfixation"
-  description: ""
+  topic: "Chess"
+  description: "Getting out of 400 elo"
   link: ""                  # optional URL
