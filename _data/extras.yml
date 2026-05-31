@@ -6,10 +6,10 @@ game:
   platform: ""              # e.g. "PC", "Switch", "PS5"
   note: ""                  # optional one-liner
 
-chess:
-  elo: 0                    # 0 hides the ELO badge
-  puzzle_id: ""             # Lichess puzzle ID -> lichess.org/training/<id> (blank hides the link)
-  puzzle_note: ""           # one sentence on why you like it
+reading:                    # books you're reading right now (add as many as you like)
+  - title: "Book Title"
+    author: "Author Name"
+    note: ""                # optional, e.g. "about halfway"
 
 hyperfixation:
   topic: "Your current hyperfixation"

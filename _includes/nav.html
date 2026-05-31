@@ -21,6 +21,10 @@
          {% if page.url contains '/courses/' %}class="active"{% endif %}>Courses Taken</a>
     </li>
     <li>
+      <a href="{{ '/books/' | relative_url }}"
+         {% if page.url contains '/books/' %}class="active"{% endif %}>Books</a>
+    </li>
+    <li>
       <a href="{{ '/extras/' | relative_url }}"
          {% if page.url contains '/extras/' %}class="active"{% endif %}>Extras</a>
     </li>

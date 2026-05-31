@@ -28,23 +28,27 @@ title: Extras
       {% endif %}
     </div>
 
-    <!-- CHESS -->
+    <!-- CURRENTLY READING -->
     <div class="extras-widget">
       <div class="widget-label">
-        <i class="fa fa-trophy"></i>&nbsp; Chess
+        <i class="fa fa-book"></i>&nbsp; Currently reading
       </div>
-      {% if e.chess.elo and e.chess.elo != 0 %}
-      <div class="elo-badge">{{ e.chess.elo }} ELO &nbsp;·&nbsp; Lichess</div>
-      {% endif %}
-      <div class="widget-sub">Favorite puzzle right now:</div>
-      {% if e.chess.puzzle_note and e.chess.puzzle_note != "" %}
-      <p class="puzzle-note">{{ e.chess.puzzle_note }}</p>
-      {% endif %}
-      {% if e.chess.puzzle_id and e.chess.puzzle_id != "" %}
-      <a href="https://lichess.org/training/{{ e.chess.puzzle_id }}"
-         class="puzzle-link" target="_blank" rel="noopener">
-        <i class="fa fa-external-link"></i> Solve it on Lichess
-      </a>
+      {% if e.reading and e.reading.size > 0 %}
+      <ul class="reading-list">
+        {% for book in e.reading %}
+        <li>
+          <span class="reading-title">{{ book.title }}</span>
+          {% if book.author and book.author != "" %}
+          <span class="reading-author">— {{ book.author }}</span>
+          {% endif %}
+          {% if book.note and book.note != "" %}
+          <span class="reading-note">{{ book.note }}</span>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="widget-sub">Nothing on the nightstand right now.</p>
       {% endif %}
     </div>
 
@@ -58,7 +62,7 @@ title: Extras
       <p>{{ e.hyperfixation.description }}</p>
       {% endif %}
       {% if e.hyperfixation.link and e.hyperfixation.link != "" %}
-      <a href="{{ e.hyperfixation.link }}" class="puzzle-link"
+      <a href="{{ e.hyperfixation.link }}" class="widget-link"
          style="margin-top: var(--sm);" target="_blank" rel="noopener">
         <i class="fa fa-external-link"></i> Learn more
       </a>
