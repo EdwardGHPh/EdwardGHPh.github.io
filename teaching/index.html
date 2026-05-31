@@ -1,0 +1,56 @@
+---
+layout: default
+title: Teaching & Tutorials
+---
+
+<div class="container section">
+  <h1 class="page-title">Teaching &amp; Tutorials</h1>
+  <p style="margin-bottom: var(--lg);">
+    PDFs and Jupyter notebooks from courses I have TA'd or tutorials I have written.
+    Notebooks link to nbviewer for rendering; source is on GitHub.
+  </p>
+
+  {% assign items = site.data.teaching %}
+  {% if items.size > 0 %}
+  <div class="teaching-list">
+    {% for item in items %}
+    <div class="teaching-card">
+      <div class="teaching-card-header">
+        {% if item.type == 'pdf' %}
+          <span class="badge badge-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span>
+        {% elsif item.type == 'notebook' %}
+          <span class="badge badge-notebook"><i class="fa fa-book"></i> Notebook</span>
+        {% endif %}
+        <h3>{{ item.title }}</h3>
+      </div>
+      {% if item.description %}
+      <p>{{ item.description }}</p>
+      {% endif %}
+      <div class="teaching-links">
+        {% if item.type == 'pdf' and item.file %}
+          <a href="{{ item.file | relative_url }}" class="link-primary" target="_blank">
+            <i class="fa fa-eye"></i> View PDF
+          </a>
+          <a href="{{ item.file | relative_url }}" class="link-secondary" download>
+            <i class="fa fa-download"></i> Download
+          </a>
+        {% elsif item.type == 'notebook' and item.nbviewer_url %}
+          <a href="{{ item.nbviewer_url }}" class="link-primary" target="_blank">
+            <i class="fa fa-external-link"></i> Open in nbviewer
+          </a>
+          {% if item.github_url %}
+          <a href="{{ item.github_url }}" class="link-secondary" target="_blank">
+            <i class="fa fa-github"></i> Source
+          </a>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="no-posts">
+    <p>Teaching materials coming soon.</p>
+  </div>
+  {% endif %}
+</div>

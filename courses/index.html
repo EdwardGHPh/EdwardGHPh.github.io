@@ -1,0 +1,35 @@
+---
+layout: default
+title: Courses Taken
+---
+
+<div class="container section">
+  <h1 class="page-title">Courses Taken</h1>
+  <p style="margin-bottom: var(--lg);">
+    A running record of graduate and advanced undergraduate courses I have taken,
+    with brief reflections on each.
+  </p>
+
+  {% if site.data.courses.size > 0 %}
+  <div class="courses-list">
+    {% for course in site.data.courses %}
+    <div class="course-card">
+      <div class="course-card-header">
+        <h3>{{ course.name }}</h3>
+        <span class="course-meta">{{ course.institution }}{% if course.year %}, {{ course.year }}{% endif %}</span>
+      </div>
+      {% if course.description %}
+      <p class="course-description">{{ course.description }}</p>
+      {% endif %}
+      {% if course.reflection %}
+      <p class="course-reflection">{{ course.reflection }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="no-posts">
+    <p>No courses listed yet.</p>
+  </div>
+  {% endif %}
+</div>

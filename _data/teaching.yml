@@ -1,0 +1,21 @@
+# Teaching materials: PDFs and Jupyter notebooks.
+#
+# For a PDF:
+#   type: pdf
+#   file: /assets/teaching/filename.pdf
+#
+# For a Jupyter notebook:
+#   type: notebook
+#   nbviewer_url: "https://nbviewer.org/github/edwardghph/REPO/blob/main/path/to/notebook.ipynb"
+#   github_url: "https://github.com/edwardghph/REPO/blob/main/path/to/notebook.ipynb"  (optional)
+
+# - title: "Introduction to Neural Quantum States"
+#   type: pdf
+#   file: /assets/teaching/nqs-intro.pdf
+#   description: "An introductory walkthrough of NQS methods for quantum many-body systems."
+
+# - title: "Variational Monte Carlo — a Hands-on Tutorial"
+#   type: notebook
+#   nbviewer_url: "https://nbviewer.org/github/edwardghph/..."
+#   github_url: "https://github.com/edwardghph/..."
+#   description: "Step-by-step implementation of VMC for the 1D Heisenberg chain."

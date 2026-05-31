@@ -1,0 +1,17 @@
+# Extras — edit these whenever something changes.
+# Any field left blank is hidden on the page automatically.
+
+game:
+  title: "Your current game"
+  platform: ""              # e.g. "PC", "Switch", "PS5"
+  note: ""                  # optional one-liner
+
+chess:
+  elo: 0                    # 0 hides the ELO badge
+  puzzle_id: ""             # Lichess puzzle ID -> lichess.org/training/<id> (blank hides the link)
+  puzzle_note: ""           # one sentence on why you like it
+
+hyperfixation:
+  topic: "Your current hyperfixation"
+  description: ""
+  link: ""                  # optional URL

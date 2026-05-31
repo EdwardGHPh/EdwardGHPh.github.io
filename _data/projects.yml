@@ -1,0 +1,18 @@
+# Current active research projects.
+# status: active | submitted | paused
+# equation: raw LaTeX string (no $ delimiters), rendered inline by MathJax
+
+- title: "Open Quantum Systems via Neural Quantum States"
+  description: "Applying recurrent neural network quantum states to simulate non-Markovian
+    dynamics in open quantum systems using the POVM formulation of time evolution."
+  status: active
+  equation: '\mathcal{L}[\rho]'
+  tags: [nqs, open-quantum, povm, rnn]
+
+- title: "Signed QUBO on Rydberg Atom Hardware"
+  description: "Investigating methods to encode signed-interaction QUBO instances onto
+    neutral-atom QPUs without gadgetization, targeting frustrated graph problems relevant
+    to spin-glass physics."
+  status: active
+  equation: 'H = \sum_{ij} J_{ij} \sigma_i^z \sigma_j^z'
+  tags: [qubo, rydberg, spin-glass, optimization]

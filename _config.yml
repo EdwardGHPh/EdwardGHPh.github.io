@@ -1,0 +1,33 @@
+title: "Edward GH"
+description: "MSc Physics student — condensed matter, neural quantum states, open quantum systems"
+url: "https://EdwardGHPh.github.io"
+baseurl: ""
+
+author:
+  name: "Edward GH"
+  email: "edward.ghphy@gmail.com"
+  github: "edwardghph"
+  linkedin: "egh3456phy"
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - INSTRUCTIONS.md
+  - README.md
+  - "*.gem"
+  - .sass-cache
+  - _site
+  - vendor
+  - .bundle
+  - node_modules
